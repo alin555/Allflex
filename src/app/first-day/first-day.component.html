@@ -1,0 +1,73 @@
+<div class="overall-page">
+  <div class="page-container">
+    <div class="page">
+    <h1>Welcome!</h1>
+    <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="content">
+        <div class="left-container">
+          <p>The first day is mostly about welcoming and greeting our new employees, supporting them and making sure
+            they
+            get settled in smoothly.</p>
+          <p>During this day, our new employees will be busy with starting a new job and getting to know their
+            surroundings.
+            Help them perform all the logistics quickly and efficiently.</p>
+          <p>A welcome e-mail with a link to the onboarding learning management system will be sent automatically, and a
+            welcome kit will be waiting at their desk.</p>
+        </div>
+        <div class="right-container">
+          <div class="num">
+            <div class="blue-circle">
+              <h1>1</h1>
+            </div>
+            <h6>Welcome the new employees and introduce them to their onboarding Buddy</h6>
+          </div>
+          <div class="num relative">
+            <div class="blue-circle">
+              <h1>2</h1>
+            </div>
+            <h6>Hold a <strong><u style="cursor: pointer;" (click)="pop()">welcome meeting</u></strong> with
+              your
+              team members</h6>
+            <div class="pop-up-in" *ngIf="popStart" [ngClass]="{'pop-up-out': !popUp}">
+              <div class="exit" (click)="popUp = false">
+                <h3>x</h3>
+              </div>
+              <h4>Welcome Meeting- Key Points</h4>
+              <ul>
+                <li>Introduce yourself – professionally and personally</li>
+                <li>Get to know your new employees – ask them to share their expectations, concerns, and wishes. Listen
+                  to
+                  them – this is a great opportunity to build a trusting relationship</li>
+                <li>Share with them their first week’s agenda, see that it’s clear and they feel comfortable with it.
+                  Print
+                  it for them so they would have it handy</li>
+                <li>Introduce them to Allflex’s Onboarding learning management system and how it can support their
+                  onboarding</li>
+                <li>See that they have received everything they need and that everything is in order</li>
+              </ul>
+            </div>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>3</h1>
+            </div>
+            <h6>Make sure <strong>lunch plans</strong> are made either with you, the Buddy or your team members</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>4</h1>
+            </div>
+            <h6>Prepare your <strong>welcome announcement</strong> and share it with the relevant groups</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>5</h1>
+            </div>
+            <h6>Hold <strong>an informal team meeting</strong> to introduce the employees to the team and vice versa
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

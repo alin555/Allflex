@@ -1,0 +1,88 @@
+<div class="overall-page">
+  <div class="page-container">
+    <div class="page">
+    <h1>Discover What We Do</h1>
+    <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="content">
+        <div class="left-container">
+          <p>During the first month, the new employees are still learning about the global and local organization, as
+            well
+            as their specific role.</p>
+          <p>This is a great time to build their relationship with the team and ensure they are acquainted with
+            everyone.
+          </p>
+          <p>During this period, we also expect them to gradually take an active part in their team’s tasks to ease them
+            into their new role.</p>
+        </div>
+        <div class="right-container">
+          <div class="num">
+            <div class="blue-circle">
+              <h1>1</h1>
+            </div>
+            <h6><strong><u (click)="firstPop()">Conduct weekly 1:1 meetings</u></strong> with your new
+              employees</h6>
+            <div *ngIf="firstPopStart" class="pop-up-in" [ngClass]="{'pop-up-out': !firstPopUp}">
+              <div class="exit" (click)="firstPopUp = false">
+                <h3>x</h3>
+              </div>
+              <h4>1:1 Weekly Meetings</h4>
+              <ul>
+                <li>Discuss your expectations- Explain to them the quality of deliverables expected from their position
+                  as
+                  well as the way they are expected to work. Clarity of the company’s standards and communication guide
+                  the
+                  employees for efficiency and good teamwork.</li>
+                <li>Get to know them, learn what’s important to them, what type of feedback they respond to best, how
+                  much
+                  guidance they need, what makes them happy.</li>
+                <li>Identify any issues or pain points that might come up while completing their tasks: knowledge gaps,
+                  required skills, missing tools. Support them to address these issues.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>2</h1>
+            </div>
+            <h6><strong><u (click)="secondPop()">Get feedback</u></strong> from them on their progress
+              with
+              their onboarding experience after a
+              month</h6>
+            <div *ngIf="secondPopStart" class="pop-up-in" [ngClass]="{'pop-up-out': !secondPopUp}">
+              <div class="exit" (click)="secondPopUp = false">
+                <h3>x</h3>
+              </div>
+              <h4>1st Month Checkpoint Meeting - Recommended Questions</h4>
+              <ul>
+                <li>How do they feel about their onboarding experience so far?</li>
+                <li>Any suggestions for improvement? What’s been going well?</li>
+                <li>Was the support received from their buddy helpful?</li>
+                <li>Did the onboarding prepare them for the day-to-day tasks?</li>
+                <li>Do they have sufficient knowledge to perform their role?</li>
+                <li>If not, do they know where to seek support?</li>
+                <li>How do they feel about their integration within the team?</li>
+                <li>Do they have the right tools, systems and resources?</li>
+                <li>Is there anything else that can support them?</li>
+                <li>Anything they would like to share?</li>
+              </ul>
+            </div>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>3</h1>
+            </div>
+            <h6><strong>Follow up with the Buddy</strong> after a month and decide together if their support is still
+              required
+              and in which areas</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>4</h1>
+            </div>
+            <h6>Discuss and set their <strong>Key Performance Indicators (KPIs)</strong></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,179 @@
+.start-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: backgroundFade 0.6s linear;
+}
+
+.logo {
+  animation: fade 0.6s linear;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.header-img {
+  width: 100%;
+  background-image: url(../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.lets-go-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+  animation: fade 0.6s linear;
+}
+
+.lets-go-container h3 {
+  color: #075789;
+  font-weight: 300;
+}
+
+.lets-go-container h1 {
+  color: #075789;
+  font-weight: 500;
+}
+
+.button {
+  margin-top: 40px;
+  background-color: #0c93d2;
+  width: 235px;
+  height: 60px;
+  display: flex;
+  font-size: 35px;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+  box-shadow: 0 0 20px -5px grey;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button:hover {
+  color: #0c93d2;
+  background-color: white;
+  border: 3px solid #0c93d2;
+}
+
+/**************************************** Media Query *******************************************/
+
+@media screen and (min-width: 1170px) {
+  .lets-go-container h1 {
+    font-size: 60px;
+  }
+
+  .lets-go-container h3 {
+    font-size: 34px;
+  }
+
+  .button {
+    margin-top: 40px;
+    width: 320px;
+    height: 70px;
+    font-size: 42px;
+  }
+
+  .logo {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .lets-go-container h1 {
+    font-size: 44px;
+  }
+
+  .lets-go-container h3 {
+    font-size: 28px;
+  }
+
+  .button {
+    margin-top: 40px;
+    width: 270px;
+    height: 60px;
+    font-size: 38px;
+    box-shadow: 0 0 50px -10px black;
+  }
+
+  .logo {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .start-page {
+    display: flex;
+  }
+
+  .lets-go-container h1 {
+    font-size: 40px;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .lets-go-container h3 {
+    font-size: 24px;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 24px;
+  }
+
+  .lets-go-container {
+    position: unset;
+    padding-top: 100px;
+  }
+
+  .button {
+    margin-top: 24px;
+    width: 230px;
+    height: 44px;
+    font-size: 32px;
+    box-shadow: 0 0 50px -10px black;
+  }
+
+  .logo {
+    height: 130px;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .lets-go-container h1 {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .lets-go-container h3 {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+
+  .lets-go-container {
+    padding-bottom: 170px;
+  }
+
+  .button {
+    margin-top: 24px;
+    width: 230px;
+    height: 44px;
+    font-size: 32px;
+    box-shadow: 0 0 50px -10px black;
+  }
+
+  .logo {
+    height: 220px;
+    width: 258px;
+    bottom: 5%;
+    left: calc(50% - 129px);
+  }
+}

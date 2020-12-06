@@ -1,0 +1,162 @@
+.container {
+  height: 600px;
+  width: 180px;
+  position: fixed;
+  display: flex;
+  top: 20%;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: slideInLeft 1.2s;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blue-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 32px;
+  justify-content: space-around;
+  width: 16px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #46addd;
+}
+
+.small-blue-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 16px;
+  height: 50px;
+  position: relative;
+  left: 32px;
+  border-radius: 20px;
+  background-color: #46addd;
+}
+
+.remote-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.remote-container .step {
+  left: 60px;
+}
+
+.links {
+  width: 100px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.circle {
+  background-color: white;
+  height: 14px;
+  border-radius: 50%;
+  width: 14px;
+}
+
+.overview {
+  width: 150px;
+  background-color: #023d58;
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  display: flex;
+  left: 49px;
+  transition: all 0.4s linear;
+}
+
+.step h4 {
+  font-weight: 600;
+  height: 19px;
+  left: 10px;
+  position: relative;
+  color: #51b1df;
+  font-size: 16px;
+  width: 98px;
+}
+
+.selected {
+  width: 124px;
+  background: #023d58;
+  height: auto;
+  padding: 7px 16px 7px 7px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.selected h4 {
+  color: white;
+}
+
+.remote-container h4 {
+  font-size: 14px;
+  width: 120px;
+  height: auto;
+}
+
+.step:hover:not(.selected) {
+  width: 124px;
+  background: #023d58c9;
+  border-radius: 20px;
+  box-shadow: 0px 0px 12px -1px #023d58;
+  display: flex;
+  padding: 7px 16px 7px 7px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.remote-container .step:hover:not(.selected) {
+  width: 132px;
+  padding: 7px 20px 7px 10px;
+}
+
+.remote-container .selected {
+  width: 132px;
+  padding: 7px 20px 7px 10px;
+}
+
+.logo {
+  height: 170px;
+}

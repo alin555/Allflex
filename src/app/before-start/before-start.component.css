@@ -1,0 +1,20 @@
+.left-container h4 {
+  color: #118fc6;
+}
+
+.num h6 {
+    width: 100%;
+}
+
+.text {
+  width: 90%;
+}
+
+.num ul {
+  margin: 2px;
+}
+
+.num li {
+  font-weight: 500;
+  font-size: 13px;
+}

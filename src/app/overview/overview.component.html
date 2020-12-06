@@ -1,0 +1,235 @@
+<div class="overall-page">
+  <div class="page-container flex">
+    <div class="arrow" [ngStyle]="{'visibility': page != 1 ? 'visible' : 'hidden'}">
+      <img src="./assets/images/left.png" (click)="prevPage()">
+    </div>
+    <div class="page first-page" *ngIf="page == 1">
+      <h1>Congratulations! A new team member is about to join your team.</h1>
+      <p>
+        Starting a new job is an exciting beginning for employees, though they may also face uncertainty about their new
+        work environment. 
+        A positive onboarding journey helps to build confidence and contributes to the sense of belonging for our new
+        employees.
+        We have a critical role to play in creating a positive experience for them.
+      </p>
+      <p>
+        This kit is for you, to provide a framework that will make the onboarding experience effective, enjoyable and
+        valuable.
+        In this kit is a set of guidelines and activities for you to complete during the different phases of the
+        onboarding
+        journey.
+        The kit is linked to a set of supporting tools.
+      </p>
+    </div>
+    <div class="page second-page" *ngIf="page == 2">
+      <h1>What is Onboarding?</h1>
+      <img class="line-img" src="./assets/images/blue-line.png">
+      <h3 class="blue">When a new colleague joins our team, we aim to:</h3>
+      <ul>
+        <li>Provide a warm welcome, while building a sense of purpose and belonging to the organization</li>
+        <li>Facilitate a structured and thoughtful onboarding program that connects our new employee to our culture and
+          our business</li>
+        <li>Support the way our new employee integrates into our social networks and starts to interact independently
+        </li>
+      </ul>
+    </div>
+    <div class="page third-page" *ngIf="page == 3">
+      <h1>What do We Need to Do?</h1>
+      <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="icons">
+        <div class="wrap">
+          <h2>Make them feel at home</h2>
+          <div class="icon-circle home-icon" (click)="changeTo('home')"
+            [ngStyle]="{'background': text == 'home' ? '#46addd' : 'url(./assets/images/home.png)'}">
+          </div>
+        </div>
+        <div class="wrap">
+          <h2>Make them professional</h2>
+          <div class="icon-circle pro-icon" (click)="changeTo('pro')"
+            [ngStyle]="{'background': text == 'pro' ? '#46addd' : 'url(./assets/images/teaching.png)'}">
+          </div>
+        </div>
+      </div>
+      <div class="small-text-box" [ngStyle]="{'display': text == 'home' ? 'block' : 'none'}">
+        <h6>Socializing is critical for a good onboarding experience. Our role is to make sure the new employees feel
+          welcomed by their team. This role relates to all of us.</h6>
+      </div>
+      <div class="small-text-box" [ngStyle]="{'display': text == 'pro' ? 'block' : 'none'}">
+        <h6>We need to mentor our new employees during the onboarding process; make ourselves available for their
+          questions, explain how to handle different situations or challenges on their journey to become professional
+          sales people.</h6>
+      </div>
+    </div>
+    <div class="page fourth-page" *ngIf="page == 4">
+      <h1>Onboarding Key Stakeholders</h1>
+      <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="icons">
+        <div class="wrap">
+          <h2>Direct Manager</h2>
+          <div class="icon-circle manager-icon" (click)="changeTo('manager')"
+            [ngStyle]="{'background': text == 'manager' ? '#46addd' : 'url(./assets/images/manager.png)'}">
+          </div>
+        </div>
+        <div class="wrap">
+          <h2>Buddy</h2>
+          <div class="icon-circle buddy-icon" (click)="changeTo('buddy')"
+            [ngStyle]="{'background': text == 'buddy' ? '#46addd' : 'url(./assets/images/buddy.png)'}">
+          </div>
+        </div>
+        <div class="wrap">
+          <h2>HR person</h2>
+          <div class="icon-circle hr-icon" (click)="changeTo('hr')"
+            [ngStyle]="{'background': text == 'hr' ? '#46addd' : 'url(./assets/images/hr.png)'}">
+          </div>
+        </div>
+      </div>
+      <div class="text-box" [ngStyle]="{'display': text == 'manager' ? 'block' : 'none'}">
+        <h6>Responsible for a successful onboarding experience:</h6>
+        <ul>
+          <li>Assign a Buddy (other team member or yourself)</li>
+          <li>Provide a warm and supportive welcome</li>
+          <li>Plan and deliver the onboarding journey – role-based training and meetings</li>
+          <li>Make sure the employee is ready for work and set up to succeed, and if something is not right, sort it out
+          </li>
+          <li>Set goals and Key Performance Indicators (KPI’s)</li>
+          <li>Align expectations</li>
+        </ul>
+      </div>
+      <div class="text-box" [ngStyle]="{'display': text == 'buddy' ? 'block' : 'none'}">
+        <h6>Has the direct responsibility for the social and professional onboarding.</h6>
+        <h6>Assigning a buddy is not mandatory but highly recommended.</h6>
+        <ul>
+          <li>Provide a warm and supportive welcome</li>
+          <li>Show them around
+          </li>
+          <li>‘Go to Person‘, helping to understand ‘how things work‘</li>
+          <li>Mentor and content expert</li>
+          <li>Provides guidance throughout the onboarding process from the first day to the last day.</li>
+        </ul>
+      </div>
+      <div class="text-box" [ngStyle]="{'display': text == 'hr' ? 'block' : 'none'}">
+        <h6>Formally start the onboarding process and oversee logistics</h6>
+        <ul>
+          <li>Take care of employee issues (contract, benefits...)</li>
+          <li>Facilitate the process, making sure all relevant stakeholders are involved</li>
+          <li>Support the direct manager when needed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="page fifth-page" *ngIf="page == 5">
+      <h1>Why do we need an Onboarding Buddy?</h1>
+      <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="content">
+        <div class="left-container">
+          <h4>Starting a new job is very exciting!</h4>
+          <p>However, people might also feel uncertain and overwhelmed…</p>
+          <p>
+            To make it easier on our new employees, we’d like to present them with a Buddy to support them on their
+            journey,
+            along with their manager, the HR person and the team.
+          </p>
+        </div>
+        <div class="right-container">
+          <h4>The Buddy is the ‘go to person’</h4>
+          <h5>For any advice, question or need:</h5>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>1</h1>
+            </div>
+            <h6>Guiding the employee on the informal stuff, providing tips that will help them become part of the team.
+            </h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>2</h1>
+            </div>
+            <h6>Answering things that the employee might feel uncomfortable asking someone else.</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>3</h1>
+            </div>
+            <h6>Introducing the employee to people at Allflex and providing support during the onboarding plan.</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>4</h1>
+            </div>
+            <h6 id="larger">Responsible for evaluating the performance of the new employee during the onboarding process
+              and
+              indicating
+              if there are any issues.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page sixth-page" *ngIf="page == 6">
+      <h1>Points to keep in mind</h1>
+      <img class="line-img" src="./assets/images/blue-line.png">
+          <div class="point">
+            <div class="check"></div>
+            <span>Timing is everything - </span>
+            <p>‘Minor’ things, like having the personal computer set up on the first day, can add to a great onboarding
+              experience. There is no such thing as too much attention to detail when it comes to our employees.</p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Encourage the employee to ask questions - </span>
+            <p>It is the best way to learn, yet not everyone feels comfortable asking questions when they are the new
+              people on their team.
+            </p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Explain internal terminology - </span>
+            <p>Every company has its internal jargon. Don’t assume that terms and acronyms that are obvious to you are
+              clear to new employees</p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Clarify what’s important for you - </span>
+            <p>Articulate as clearly and as early as possible what you expect to see from the employee, how you would
+              like
+              to work together and what you value.</p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Know the employee - </span>
+            <p>The new employees are here to build a lasting relationship. Learn who they are and what is important to
+              them to make this work.
+            </p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Relate to the employee’s experience - </span>
+            <p>Experience and career story are a crucial part of who the employees are. The knowledge they bring will
+              benefit the entire team.
+            </p>
+          </div>
+          <div class="point">
+            <div class="check"></div>
+            <span>Customize the Onboarding process to the employee - </span>
+            <p>We are all different and unique. Each employee comes with different experience and character. It’s
+              important to adjust the Onboarding process accordingly for better understanding.
+            </p>
+          </div>
+    </div>
+    <div class="arrow" [ngStyle]="{'visibility': page != 6 ? 'visible' : 'hidden'}">
+      <img src="./assets/images/right.png" (click)="nextPage()">
+    </div>
+  </div>
+  <footer>
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 1}" (click)="moveToPage(1)">
+      <img src="./assets/images/person.png">
+    </div>
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 2 || page == 3}" (click)="moveToPage(2)">
+      <img src="./assets/images/rocket.png">
+    </div>
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 4 || page == 5}" (click)="moveToPage(4)">
+      <img src="./assets/images/settingg.png">
+    </div>
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 6}" (click)="moveToPage(6)">
+      <img src="./assets/images/lamp.png">
+    </div>
+  </footer>
+</div>

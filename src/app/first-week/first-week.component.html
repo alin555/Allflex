@@ -1,0 +1,80 @@
+<div class="overall-page">
+  <div class="page-container">
+    <div class="page">
+    <h1>Discover Who We Are</h1>
+    <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="content">
+        <div class="left-container">
+          <p>The first week is very important in the onboarding journey and it will shape the way our new employees
+            perceives Allflex.</p>
+          <p>Based on the training plan you prepared, the employees would have meetings with different stakeholders and
+            learn content & tools that are relevant to their role.</p>
+          <p>The first week also includes learning modules about Allflex that are part of the global onboarding process.
+          </p>
+        </div>
+        <div class="right-container">
+          <div class="num">
+            <div class="blue-circle">
+              <h1>1</h1>
+            </div>
+            <h6><strong>Check daily on your employees’ well-being</strong> and their progress with their first week
+              agenda
+            </h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>2</h1>
+            </div>
+            <h6><strong>Follow up with the Buddy</strong> to see if any issue requires your involvement</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>3</h1>
+            </div>
+            <h6><strong><u style="cursor: pointer;" (click)="pop()">Hold a role introduction
+                  meeting</u></strong>
+              to discuss their roles & responsibilities as well
+              as your expectations</h6>
+            <div *ngIf="popStart" class="pop-up-in" [ngClass]="{'pop-up-out': !popUp}">
+              <div class="exit" (click)="popUp = false">
+                <h3>x</h3>
+              </div>
+              <h4>Role introduction meeting - Key Points</h4>
+              <ul>
+                <li>Introduce their role within the team</li>
+                <ul>
+                  <li>Describe the key areas of responsibilities</li>
+                  <li>Targets and success criteria</li>
+                  <li>Interfaces</li>
+                  <li>Processes and systems</li>
+                  <li>Your expectations of the role</li>
+                </ul>
+                <li>Present their role-specific training plan to them, including how you expect them to track and
+                  complete
+                  it</li>
+              </ul>
+            </div>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>4</h1>
+            </div>
+            <h6>If needed, support the employee in <strong>completing the <span style="text-decoration: underline;">self-learning units</span></strong></h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>5</h1>
+            </div>
+            <h6><strong>Schedule weekly 1:1 meetings</strong> for the entire onboarding period</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>6</h1>
+            </div>
+            <h6>Congratulate your new employee for successfully completing their first week at Allflex</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

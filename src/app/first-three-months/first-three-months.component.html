@@ -1,0 +1,80 @@
+<div class="overall-page">
+  <div class="page-container">
+    <div class="page">
+    <h1>Deepen The Knowledge</h1>
+    <img class="line-img" src="./assets/images/blue-line.png">
+      <div class="content">
+        <div class="left-container">
+          <p>At the end of the first 3 months with the company, the onboarding journey officially ends.</p>
+          <p>They are expected to gradually work independently on projects, become accountable for their work and be
+            proactive and involved. Still, their learning journey continues beyond the first 3 months and they receive
+            mentoring and support.</p>
+        </div>
+        <div class="right-container">
+          <div class="num">
+            <div class="blue-circle">
+              <h1>1</h1>
+            </div>
+            <h6><strong>Support the employees</strong> in completing all items in their role-based training plan,
+              including site visits where needed</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>2</h1>
+            </div>
+            <h6>Conduct a <strong><u (click)="pop()">checkpoint meeting</u></strong> with the employees to
+              summarize their first 3 months onboarding journey</h6>
+            <div class="pop-up-in" *ngIf="popStart" [ngClass]="{'pop-up-out': !popUp}">
+              <div class="exit" (click)="popUp = false">
+                <h3>x</h3>
+              </div>
+              <h4>3rd Month Checkpoint Meeting- Recommended Questions</h4>
+              <ul>
+                <li>How was their onboarding experience? What’s helped them the most?</li>
+                <li>Do they feel they understand the ‘big picture'?</li>
+                <li>Do they have sufficient knowledge to perform their role?</li>
+                <li>Do they feel they can work independently and are capable of delivering the expected results?</li>
+                <li>Are they clear about their personal KPIs and development goals for the upcoming year?</li>
+                <li>Did they get the required support from you, as their manager?</li>
+                <li>How do they feel about their integration within their team and other teams?</li>
+                <li>Looking ahead, is there anything they feel they need to succeed in their role?</li>
+                <li>What can our company do better?</li>
+              </ul>
+            </div>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>3</h1>
+            </div>
+            <h6><strong>Discuss their KPIs</strong> and personal development goals with them</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>4</h1>
+            </div>
+            <h6>Set a meeting with your HR person to <strong>review and assess your new employee’s performance</strong>
+            </h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>5</h1>
+            </div>
+            <h6><strong>Integrate all lessons learned</strong> from the onboarding process in order to improve the next
+              one</h6>
+          </div>
+          <div class="num">
+            <div class="blue-circle">
+              <h1>6</h1>
+            </div>
+            <h6><strong>Celebrate the employees’</strong> success with the team and congratulate them for their
+              accomplishments so far</h6>
+          </div>
+          <div class="note">
+            <h3><strong>Note</strong> - If these 3 months are defined as a probation period, decide about their
+              suitability for the role</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

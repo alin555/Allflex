@@ -1,0 +1,40 @@
+.left-container h4 {
+  color: #118fc6;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.screen {
+  background-image: url(../../assets/images/screen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 340px;
+  width: 100%;
+  background-position: center;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen ul {
+  margin: 0 230px 70px 0;
+}
+
+.screen li {
+  width: 180px;
+  margin-bottom: 20px;
+} 
+
+@media screen and (max-width: 768px) {
+  li {
+    font-size: 11px;
+  }
+
+  .screen {
+    justify-content: flex-start;
+  }
+}

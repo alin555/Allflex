@@ -1,0 +1,36 @@
+.blue-circle {
+  height: 40px;
+  width: 40px;
+}
+
+.note {
+  background-color: #019ada;
+  height: auto;
+  width: 100%;
+  border-radius: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note h3 {
+  color: white;
+  font-weight: 500;
+  width: 95%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/********************** Media Query ****************/
+
+@media screen and (max-width: 1000px) {
+  .note h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .num h6 {
+    font-size: 13px
+  }
+}

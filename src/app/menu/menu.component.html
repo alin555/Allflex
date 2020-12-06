@@ -1,0 +1,40 @@
+<div class="container">
+  <img src="./assets/images/logo.png" class="logo">
+  <div class="nav-bar">
+    <div class="blue-line">
+      <div class="step" (click)="changePage('overview')" [ngClass]="{selected: currentPage == 'overview'}">
+        <div class="circle"></div>
+        <h4>Overview</h4>
+      </div>
+      <div class="step" (click)="changePage('before-start')" [ngClass]="{selected: currentPage == 'before-start'}">
+        <div class="circle"></div>
+        <h4>Before Start</h4>
+      </div>
+      <div class="step" (click)="changePage('first-day')" [ngClass]="{selected: currentPage == 'first-day'}">
+        <div class="circle"></div>
+        <h4>First Day</h4>
+      </div>
+      <div class="step" (click)="changePage('first-week')" [ngClass]="{selected: currentPage == 'first-week'}">
+        <div class="circle"></div>
+        <h4>First Week</h4>
+      </div>
+      <div class="step" (click)="changePage('first-month')" [ngClass]="{selected: currentPage == 'first-month'}">
+        <div class="circle"></div>
+        <h4>First Month</h4>
+      </div>
+      <div class="step" (click)="changePage('first-three-months')"
+        [ngClass]="{selected: currentPage == 'first-three-months'}">
+        <div class="circle"></div>
+        <h4>First 3 Months</h4>
+      </div>
+    </div>
+  </div>
+  <div class="remote-container">
+    <div class="small-blue-line">
+      <div class="step" (click)="changePage('remote')" [ngClass]="{selected: currentPage == 'remote'}">
+        <div class="circle"></div>
+        <h4>Remote Onboarding & Tools</h4>
+      </div>
+    </div>
+  </div>
+</div>
