@@ -4,10 +4,10 @@
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.screen {
+/* .screen {
   background-image: url(../../assets/images/screen.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -18,13 +18,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.screen ul {
+/* .screen ul {
   margin: 0 230px 70px 0;
+} */
+
+.links {
+  width: auto;
 }
 
-.screen li {
+li {
   width: 180px;
   margin-bottom: 20px;
 } 
@@ -34,7 +38,7 @@
     font-size: 11px;
   }
 
-  .screen {
+  /* .screen {
     justify-content: flex-start;
-  }
+  } */
 }

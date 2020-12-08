@@ -1,7 +1,7 @@
 <div class="overall-page">
   <div class="page-container flex">
     <div class="arrow" [ngStyle]="{'visibility': page != 1 ? 'visible' : 'hidden'}">
-      <img src="./assets/images/left.png" (click)="prevPage()">
+      <img src="./assets/images/prev.svg" class="prev" (click)="prevPage()">
     </div>
     <div class="page first-page" *ngIf="page == 1">
       <h1>Congratulations! A new team member is about to join your team.</h1>
@@ -215,7 +215,7 @@
           </div>
     </div>
     <div class="arrow" [ngStyle]="{'visibility': page != 6 ? 'visible' : 'hidden'}">
-      <img src="./assets/images/right.png" (click)="nextPage()">
+      <img src="./assets/images/next.svg" class="next" (click)="nextPage()">
     </div>
   </div>
   <footer>

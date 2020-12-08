@@ -1,7 +1,7 @@
 <div class="overall-page">
   <div class="page-container flex">
     <div class="arrow" [ngStyle]="{'visibility': page != 1 ? 'visible' : 'hidden'}">
-      <img src="./assets/images/left.png" (click)="prevPage()">
+      <img src="./assets/images/prev.svg" class="prev" (click)="prevPage()">
     </div>
     <div class="page first-page" *ngIf="page == 1">
       <h1>Deepen The Knowledge</h1>
@@ -63,17 +63,17 @@
     <div class="page second-page" *ngIf="page == 2">
       <h1>Tools Templated & Checklists- Quick Access</h1>
       <img class="line-img" src="./assets/images/blue-line.png">
-      <div class="screen">
-        <ul>
+      <!-- <div class="screen"> -->
+        <ul class="links">
           <li><a href="">Onboarding plan</a></li>
           <li><a href="">Welcome e-mail message</a></li>
           <li><a href="">New employee e-learning units</a></li>
           <li><a href="">To do checklists</a></li>
         </ul>
-      </div>
+      <!-- </div> -->
     </div>
     <div class="arrow" [ngStyle]="{'visibility': page != 2 ? 'visible' : 'hidden'}">
-      <img src="./assets/images/right.png" (click)="nextPage()">
+      <img src="./assets/images/next.svg" class="next" (click)="nextPage()">
     </div>
   </div>
 </div>

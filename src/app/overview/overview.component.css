@@ -5,7 +5,7 @@
 
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .first-page p {
