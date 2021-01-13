@@ -10,8 +10,8 @@
 .logo {
   animation: fade 0.6s linear;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 20px;
+  left: 20px;
 }
 
 .header-img {
@@ -106,7 +106,7 @@
   }
 
   .logo {
-    height: 200px;
+    height: 160px;
   }
 }
 
@@ -143,8 +143,7 @@
   }
 
   .logo {
-    height: 130px;
-    bottom: 0;
+    height: 90px;
   }
 }
 

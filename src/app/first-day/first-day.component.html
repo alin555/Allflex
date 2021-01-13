@@ -11,21 +11,19 @@
           <p>During this day, our new employees will be busy with starting a new job and getting to know their
             surroundings.
             Help them perform all the logistics quickly and efficiently.</p>
-          <p>A welcome e-mail with a link to the onboarding learning management system will be sent automatically, and a
-            welcome kit will be waiting at their desk.</p>
         </div>
         <div class="right-container">
           <div class="num">
             <div class="blue-circle">
               <h1>1</h1>
             </div>
-            <h6>Welcome the new employees and introduce them to their onboarding Buddy</h6>
+            <h6>Welcome the new employees and introduce them to their <strong>onboarding Buddy</strong></h6>
           </div>
           <div class="num relative">
             <div class="blue-circle">
               <h1>2</h1>
             </div>
-            <h6>Hold a <strong><u style="cursor: pointer;" (click)="pop()">welcome meeting</u></strong> with
+            <h6>Hold a <div style="display: inline-block;" [ngClass]="{tada: !popStart}" (click)="pop()"><strong><u>welcome meeting</u></strong></div> with
               your
               team members</h6>
             <div class="pop-up-in" *ngIf="popStart" [ngClass]="{'pop-up-out': !popUp}">
@@ -41,9 +39,9 @@
                 <li>Share with them their first week’s agenda, see that it’s clear and they feel comfortable with it.
                   Print
                   it for them so they would have it handy</li>
-                <li>Introduce them to Allflex’s Onboarding learning management system and how it can support their
-                  onboarding</li>
-                <li>See that they have received everything they need and that everything is in order</li>
+                <li>Introduce them to Allflex’s onboarding learning management system and how it can support their
+                  onboarding process</li>
+                <li>Ensure they have received everything they need and that everything is in order</li>
               </ul>
             </div>
           </div>
@@ -59,13 +57,13 @@
             </div>
             <h6>Prepare your <strong>welcome announcement</strong> and share it with the relevant groups</h6>
           </div>
-          <div class="num">
+          <!-- <div class="num">
             <div class="blue-circle">
               <h1>5</h1>
             </div>
             <h6>Hold <strong>an informal team meeting</strong> to introduce the employees to the team and vice versa
             </h6>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

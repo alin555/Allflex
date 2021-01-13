@@ -19,7 +19,7 @@
             <div class="blue-circle">
               <h1>1</h1>
             </div>
-            <h6><strong><u (click)="firstPop()">Conduct weekly 1:1 meetings</u></strong> with your new
+            <h6><div style="display: inline-block;" [ngClass]="{tada: !firstPopStart}" (click)="firstPop()"><strong><u>Conduct weekly 1:1 meetings</u></strong></div> with your new
               employees</h6>
             <div *ngIf="firstPopStart" class="pop-up-in" [ngClass]="{'pop-up-out': !firstPopUp}">
               <div class="exit" (click)="firstPopUp = false">
@@ -27,16 +27,15 @@
               </div>
               <h4>1:1 Weekly Meetings</h4>
               <ul>
-                <li>Discuss your expectations- Explain to them the quality of deliverables expected from their position
+                <li>Discuss your expectations - explain to them the quality of deliverables expected from their position
                   as
-                  well as the way they are expected to work. Clarity of the company’s standards and communication guide
+                  well as the way they are expected to work. Clarity of the company’s standards and communication guides
                   the
                   employees for efficiency and good teamwork.</li>
                 <li>Get to know them, learn what’s important to them, what type of feedback they respond to best, how
                   much
-                  guidance they need, what makes them happy.</li>
-                <li>Identify any issues or pain points that might come up while completing their tasks: knowledge gaps,
-                  required skills, missing tools. Support them to address these issues.</li>
+                  guidance they need and what makes them happy.</li>
+                <li>Identify any issues or pain points that might come up while completing their tasks, such as knowledge gaps, required skills and missing tools</li>
               </ul>
             </div>
           </div>
@@ -44,7 +43,7 @@
             <div class="blue-circle">
               <h1>2</h1>
             </div>
-            <h6><strong><u (click)="secondPop()">Get feedback</u></strong> from them on their progress
+            <h6><div style="display: inline-block;" [ngClass]="{tada: !secondPopStart}" (click)="secondPop()"><strong><u>Get feedback</u></strong></div> from them on their progress
               with
               their onboarding experience after a
               month</h6>

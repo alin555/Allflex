@@ -15,6 +15,7 @@ body {
 }
 
 .page {
+  overflow-y: scroll;
   width: 85%;
   height: calc(100% - 60px);
   animation: fadeIn 0.8s forwards;
@@ -22,7 +23,8 @@ body {
   position: relative;
   bottom: 24px;
   /* left: 50px; */
-  left: 0;
+  /* left: 0; */
+  left: 2%;
 }
 
 h1,
@@ -37,7 +39,7 @@ ul {
 }
 
 .page-container {
-  height: 60%;
+  height: 62%;
   width: calc(100% - 180px);
   padding: 0 0 0 180px;
   position: absolute;
@@ -151,6 +153,7 @@ u {
 
 .num li {
   font-size: 14px;
+  width: 98%;
 }
 
 .text {
@@ -221,6 +224,11 @@ u {
 .point p {
   display: inline;
   line-height: 25px;
+  font-size: 20px;
+}
+
+.point span {
+  font-size: 24px;
 }
 
 .point {
@@ -228,14 +236,41 @@ u {
   position: relative;
 }
 
+.flash {
+  animation: flash 2s infinite 2s;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+
+.shakeX {
+  animation: shakeX 10s infinite;
+  display: inline-block;
+}
+
+.heartBeat {
+  display: inline-block;
+  animation: heartBeat 5s infinite;
+}
+
+.shake {
+  display: inline-block;
+  animation: shake 5s infinite;
+}
+
+.tada {
+  animation: tada 4s infinite;
+}
 
 /************************* Media Query *************************/
 
-@media (min-width: 1170px) {
+/* @media (min-width: 1170px) {
   body {
     background-size: cover;
   }
-}
+} */
 
 @media (min-width: 1000px) {
   .pop-up-in h4 {
@@ -319,8 +354,135 @@ u {
   }
 }
 
+@media (max-height: 750px) {
+.blue-circle {
+  width: 30px;
+  height: 30px;
+}
+}
 
 /******************************* Key Frames ****************************/
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  2.5%,
+  5% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -2deg);
+  }
+
+  7.5%,
+  12.5%,
+  17.5%,
+  22.5% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 2deg);
+  }
+
+  10%,
+  15%,
+  20% {
+    transform: scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -2deg);
+  }
+
+  30% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.1);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shakeX {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1,1,1);
+  }
+
+  50% {
+    transform: scale3d(1.05,1.05,1.05);
+  }
+
+  to {
+    transform: scale3d(1,1,1);
+  }
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
 
 @keyframes arrow {
   0% {

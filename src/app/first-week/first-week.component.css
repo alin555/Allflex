@@ -1,3 +1,10 @@
 ul {
     margin: 2px;
 }
+
+@media (max-height: 850px) {
+    .blue-circle {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -25,33 +25,30 @@
             <div class="blue-circle">
               <h1>2</h1>
             </div>
-            <h6><strong>Follow up with the Buddy</strong> to see if any issue requires your involvement</h6>
+            <h6><strong>Follow up with the Buddy</strong> to see if your involvement is required</h6>
           </div>
           <div class="num">
             <div class="blue-circle">
               <h1>3</h1>
             </div>
-            <h6><strong><u style="cursor: pointer;" (click)="pop()">Hold a role introduction
-                  meeting</u></strong>
-              to discuss their roles & responsibilities as well
-              as your expectations</h6>
+            <h6><div style="display: inline-block;" [ngClass]="{tada: !popStart}" (click)="pop()"><strong><u>Hold a role introduction
+                  meeting</u></strong></div>
+              to discuss their responsibilities and your expectations</h6>
             <div *ngIf="popStart" class="pop-up-in" [ngClass]="{'pop-up-out': !popUp}">
               <div class="exit" (click)="popUp = false">
                 <h3>x</h3>
               </div>
-              <h4>Role introduction meeting - Key Points</h4>
+              <h4>Role Introduction Meeting - Key Points</h4>
               <ul>
                 <li>Introduce their role within the team</li>
                 <ul>
-                  <li>Describe the key areas of responsibilities</li>
+                  <li>The key areas of their responsibilities</li>
                   <li>Targets and success criteria</li>
                   <li>Interfaces</li>
                   <li>Processes and systems</li>
                   <li>Your expectations of the role</li>
                 </ul>
-                <li>Present their role-specific training plan to them, including how you expect them to track and
-                  complete
-                  it</li>
+                <li>Present them with their-specific training plan, including how you expect them to track and complete it</li>
               </ul>
             </div>
           </div>
@@ -59,7 +56,7 @@
             <div class="blue-circle">
               <h1>4</h1>
             </div>
-            <h6>If needed, support the employee in <strong>completing the <span style="text-decoration: underline;">self-learning units</span></strong></h6>
+            <h6>If needed, support the employee in <strong>completing the self-learning units</strong></h6>
           </div>
           <div class="num">
             <div class="blue-circle">

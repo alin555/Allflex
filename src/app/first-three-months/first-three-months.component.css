@@ -34,3 +34,10 @@
     font-size: 13px
   }
 }
+
+@media (max-height: 900px) {
+  .blue-circle {
+      width: 30px;
+      height: 30px;
+  }
+}

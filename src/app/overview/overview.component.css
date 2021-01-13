@@ -265,41 +265,43 @@ background-image: url(../../assets/images/home.png);
   margin: 10px 0;
 }
 
-.sixth-page img {
-  height: 20px;
+.sixth-page {
+  overflow: visible;
 }
 
 .check {
   background-image: url(../../assets/images/check.gif);
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
   position: absolute;
-  left: -20px;
-  top: 5px;
+  left: -28px;
+  top: 4px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.points {
+/* .point {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-}
+} */
 
-.points span {
+.point span {
   color: #2f5597;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 600;
+  font-size: 24px;
 }
 
-.points p {
+.point p {
   display: inline;
   line-height: 25px;
+  font-size: 20px;
 }
 
 .point {
-  margin-bottom: 6px;
+  margin-bottom: 14px;
   position: relative;
 }
 
@@ -386,4 +388,18 @@ footer {
   .text-box li {
     font-size: 14px;
   }  
+}
+
+@media (max-height: 850px) {
+  .point {
+    margin-bottom: 2px;
+  }
+
+  .point p {
+    font-size: 18px;
+  }
+
+  .point span {
+    font-size: 20px;
+  }
 }
