@@ -9,6 +9,7 @@ export class FirstDayComponent implements OnInit {
 
   popUp = false;
   popStart = false;
+  anim = true;
 
   constructor() { }
 
@@ -19,5 +20,11 @@ export class FirstDayComponent implements OnInit {
   pop() {
     this.popStart = true;
     this.popUp = !this.popUp;
+    this.anim = false
+    if (!this.popUp) {
+      setTimeout(() => {
+        !this.popUp ? this.popStart = false : null;
+      }, 250);
+    }
   }
 }

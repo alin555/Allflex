@@ -197,7 +197,7 @@ background-image: url(../../assets/images/home.png);
 
 .text-box h6 {
   color: #2f5597;
-  font-size: 20px;
+  font-size: 26px;
   text-align: left;
   width: 80%;
 }
@@ -265,9 +265,9 @@ background-image: url(../../assets/images/home.png);
   margin: 10px 0;
 }
 
-.sixth-page {
+/* .sixth-page {
   overflow: visible;
-}
+} */
 
 .check {
   background-image: url(../../assets/images/check.gif);
@@ -371,7 +371,7 @@ footer {
   }
 
   .text-box h6 {
-    font-size: 18px;
+    font-size: 24px;
     padding: 2px;
   }
 }
@@ -391,7 +391,7 @@ footer {
   }
 
   .text-box h6 {
-    font-size: 16px;
+    font-size: 18px;
     padding: 2px;
   }
 

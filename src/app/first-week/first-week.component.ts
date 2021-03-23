@@ -9,6 +9,7 @@ export class FirstWeekComponent implements OnInit {
 
   popUp = false;
   popStart = false;
+  anim = true;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,5 +19,11 @@ export class FirstWeekComponent implements OnInit {
   pop() {
     this.popStart = true;
     this.popUp = !this.popUp;
+    this.anim = false
+    if (!this.popUp) {
+      setTimeout(() => {
+        !this.popUp ? this.popStart = false : null;
+      }, 250);
+    }
   }
 }

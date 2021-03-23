@@ -22,10 +22,10 @@
             <div class="blue-circle">
               <h1>2</h1>
             </div>
-            <h6>Conduct a <div style="display: inline-block;" [ngClass]="{tada: !popStart}" (click)="pop()"><strong><u>checkpoint meeting</u></strong></div> with the employees to
+            <h6>Conduct a <div style="display: inline-block;" [ngClass]="{tada: anim}" (click)="pop()"><strong><u>checkpoint meeting</u></strong></div> with the employees to
               summarize their first 3 months onboarding journey</h6>
             <div class="pop-up-in" *ngIf="popStart" [ngClass]="{'pop-up-out': !popUp}">
-              <div class="exit" (click)="popUp = false">
+              <div class="exit" (click)="pop()">
                 <h3>x</h3>
               </div>
               <h4>3rd Month Checkpoint Meeting- Recommended Questions</h4>

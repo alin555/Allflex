@@ -35,6 +35,7 @@ li {
 
 .right-container h3 {
   margin-bottom: 14px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 768px) {

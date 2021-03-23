@@ -9,6 +9,7 @@ export class FirstThreeMonthsComponent implements OnInit {
 
   popUp = false;
   popStart = false;
+  anim = true;
 
   constructor() { }
 
@@ -19,6 +20,12 @@ export class FirstThreeMonthsComponent implements OnInit {
   pop() {
     this.popStart = true;
     this.popUp = !this.popUp;
+    this.anim = false
+    if (!this.popUp) {
+      setTimeout(() => {
+        !this.popUp ? this.popStart = false : null;
+      }, 250);
+    }
   }
 
 }

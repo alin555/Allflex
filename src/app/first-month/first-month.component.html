@@ -19,10 +19,10 @@
             <div class="blue-circle">
               <h1>1</h1>
             </div>
-            <h6><div style="display: inline-block;" [ngClass]="{tada: !firstPopStart}" (click)="firstPop()"><strong><u>Conduct weekly 1:1 meetings</u></strong></div> with your new
+            <h6><div style="display: inline-block;" [ngClass]="{tada: firstAnim}" (click)="firstPop()"><strong><u>Conduct weekly 1:1 meetings</u></strong></div> with your new
               employees</h6>
             <div *ngIf="firstPopStart" class="pop-up-in" [ngClass]="{'pop-up-out': !firstPopUp}">
-              <div class="exit" (click)="firstPopUp = false">
+              <div class="exit" (click)="firstPop()">
                 <h3>x</h3>
               </div>
               <h4>1:1 Weekly Meetings</h4>
@@ -43,12 +43,12 @@
             <div class="blue-circle">
               <h1>2</h1>
             </div>
-            <h6><div style="display: inline-block;" [ngClass]="{tada: !secondPopStart}" (click)="secondPop()"><strong><u>Get feedback</u></strong></div> from them on their progress
+            <h6><div style="display: inline-block;" [ngClass]="{tada: secondAnim}" (click)="secondPop()"><strong><u>Get feedback</u></strong></div> from them on their progress
               with
               their onboarding experience after a
               month</h6>
             <div *ngIf="secondPopStart" class="pop-up-in" [ngClass]="{'pop-up-out': !secondPopUp}">
-              <div class="exit" (click)="secondPopUp = false">
+              <div class="exit" (click)="secondPop()">
                 <h3>x</h3>
               </div>
               <h4>1st Month Checkpoint Meeting - Recommended Questions</h4>

@@ -31,11 +31,11 @@
             <div class="blue-circle">
               <h1>3</h1>
             </div>
-            <h6><div style="display: inline-block;" [ngClass]="{tada: !popStart}" (click)="pop()"><strong><u>Hold a role introduction
+            <h6><div style="display: inline-block;" [ngClass]="{tada: anim}" (click)="pop()"><strong><u>Hold a role introduction
                   meeting</u></strong></div>
               to discuss their responsibilities and your expectations</h6>
             <div *ngIf="popStart" class="pop-up-in" [ngClass]="{'pop-up-out': !popUp}">
-              <div class="exit" (click)="popUp = false">
+              <div class="exit" (click)="pop()">
                 <h3>x</h3>
               </div>
               <h4>Role Introduction Meeting - Key Points</h4>
