@@ -12,6 +12,8 @@ body {
   height: 100%;
   width: 100%;
   animation: backgroundFade 0.8s linear;
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
 }
 
 .page {
@@ -25,8 +27,17 @@ body {
   /* left: 50px; */
   /* left: 0; */
   /* left: 2%; */
-  margin-top: -24px;
-  margin-left: 26px;
+
+  /* margin-top: -24px; */
+  /* margin-left: 26px; */
+}
+
+.first-week-icons-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
 }
 
 h1,
@@ -42,8 +53,9 @@ ul {
 
 .page-container {
   height: 62%;
-  width: calc(100% - 180px);
-  padding: 0 0 0 180px;
+  width: 100%;
+  /* width: calc(100% - 180px); */
+  /* padding: 0 0 0 180px; */
   position: absolute;
   bottom: 0;
 }
@@ -56,12 +68,12 @@ ul {
 
 .left-container {
   width: 40%;
-  animation: bounceInLeft 1.2s;
+  /* animation: bounceInLeft 1.2s; */
 }
 
 .right-container {
   width: 55%;
-  animation: bounceInRight 1.2s;
+  /* animation: bounceInRight 1.2s; */
 }
 
 u {
@@ -137,10 +149,10 @@ u {
 
 .num {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 6px;
   border: 2px solid #46addd;
-  border-radius: 0 10px 10px;
+  border-radius: 10px;
   padding: 10px;
   position: relative;
   height: auto;

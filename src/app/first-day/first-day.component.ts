@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-first-day',
@@ -10,6 +10,7 @@ export class FirstDayComponent implements OnInit {
   popUp = false;
   popStart = false;
   anim = true;
+  @Input() page = 1;
 
   constructor() { }
 

@@ -1,71 +1,65 @@
-<div class="overall-page">
-  <div class="page-container">
-    <div class="page">
-    <h1>Welcome!</h1>
-    <img class="line-img" src="./assets/images/blue-line.png">
-      <div class="content">
-        <div class="left-container">
-          <p>The first day is mostly about welcoming and greeting our new employees, supporting them and making sure
-            they
-            get settled in smoothly.</p>
-          <p>During this day, our new employees will be busy with starting a new job and getting to know their
+<!-- <div class="overall-page"> -->
+<!-- <div class="page-container"> -->
+<!-- <div class="page"> -->
+<h2>What is a Professional Onboarding Agenda?</h2>
+<img class="line-img" src="./assets/images/blue-line.png">
+<div class="content">
+  <div class="left-container">
+    <p>The professional onboarding agenda is an organized list of activities that sets clear expectations for of the
+      learning journey the new team member needs to accomplish and when, during the onboarding process.</p>
+    <!-- <p>During this day, our new employees will be busy with starting a new job and getting to know their
             surroundings.
-            Help them perform all the logistics quickly and efficiently.</p>
-        </div>
-        <div class="right-container">
-          <div class="num">
-            <div class="blue-circle">
-              <h1>1</h1>
-            </div>
-            <h6>Welcome the new employees and introduce them to their <strong>onboarding Buddy</strong></h6>
-          </div>
-          <div class="num relative">
-            <div class="blue-circle">
-              <h1>2</h1>
-            </div>
-            <h6>Hold a <div style="display: inline-block;" [ngClass]="{tada: anim}" (click)="pop()"><strong><u>welcome meeting</u></strong></div> with
-              your
-              team members</h6>
-            <div class="pop-up-in" *ngIf="popStart" [ngClass]="{'pop-up-out': !popUp}">
-              <div class="exit" (click)="pop()">
-                <h3>x</h3>
-              </div>
-              <h4>Welcome Meeting- Key Points</h4>
-              <ul>
-                <li>Introduce yourself – professionally and personally</li>
-                <li>Get to know your new employees – ask them to share their expectations, concerns, and wishes. Listen
-                  to
-                  them – this is a great opportunity to build a trusting relationship</li>
-                <li>Share with them their first week’s agenda, see that it’s clear and they feel comfortable with it.
-                  Print
-                  it for them so they would have it handy</li>
-                <li>Introduce them to Allflex’s onboarding learning management system and how it can support their
-                  onboarding process</li>
-                <li>Ensure they have received everything they need and that everything is in order</li>
-              </ul>
-            </div>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>3</h1>
-            </div>
-            <h6>Make sure <strong>lunch plans</strong> are made either with you, the Buddy or your team members</h6>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>4</h1>
-            </div>
-            <h6>Prepare your <strong>welcome announcement</strong> and share it with the relevant groups</h6>
-          </div>
-          <!-- <div class="num">
-            <div class="blue-circle">
-              <h1>5</h1>
-            </div>
-            <h6>Hold <strong>an informal team meeting</strong> to introduce the employees to the team and vice versa
-            </h6>
-          </div> -->
-        </div>
+            Help them perform all the logistics quickly and efficiently.</p> -->
+  </div>
+  <div class="right-container">
+    <h2 style="color: #38afdc;
+    position: absolute;
+    top: -10px;">How to Create a Professional Onboarding Agenda?</h2>
+    <div class="num" *ngIf="page == 1">
+      <div class="blue-circle">
+        <h1>1</h1>
       </div>
+      <h6>Create a list of topics for the training agenda based on the role the new team member will fulfill</h6>
+    </div>
+    <div class="num" *ngIf="page == 1">
+      <div class="blue-circle">
+        <h1>2</h1>
+      </div>
+      <h6>Adjust the agenda according to the knowledge and experience of the new team member. A new team member with a
+        farming background or relevant knowledge from the industry will most likely need a shorter onboarding process
+      </h6>
+    </div>
+    <div class="num" *ngIf="page == 1">
+      <div class="blue-circle">
+        <h1>3</h1>
+      </div>
+      <h6>Add global learning materials to the agenda by using units from the Allflex Global Onboarding Resources Site.
+        This will provide the new team member with the foundational necessary knowledge they need
+      </h6>
+    </div>
+    <div class="num" *ngIf="page == 2">
+      <div class="blue-circle">
+        <h1>4</h1>
+      </div>
+      <h6>Include local learning materials to the agenda. This include relevant learning units of your region such as
+        competition in the local market, common type of farms, and relevant internal regional processes</h6>
+    </div>
+    <div class="num" *ngIf="page == 2">
+      <div class="blue-circle">
+        <h1>5</h1>
+      </div>
+      <h6>Frame the timeline for the training. Define when the new team member should be able to successfully apply all
+        skills and knowledge required in the training</h6>
+    </div>
+    <div class="num" *ngIf="page == 2">
+      <div class="blue-circle">
+        <h1>6</h1>
+      </div>
+      <h6>Set the training KPI’s per each month. For example: a ‘Completed’ status in all the theoretical learning units
+        on the first month, and successfully accomplished practical tasks on the second month. </h6>
     </div>
   </div>
 </div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->

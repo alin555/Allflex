@@ -1,77 +1,47 @@
-<div class="overall-page">
-  <div class="page-container">
-    <div class="page">
-    <h1>Discover Who We Are</h1>
-    <img class="line-img" src="./assets/images/blue-line.png">
-      <div class="content">
-        <div class="left-container">
-          <p>The first week is very important in the onboarding journey and it will shape the way our new employees
-            perceives Allflex.</p>
-          <p>Based on the training plan you prepared, the employees would have meetings with different stakeholders and
-            learn content & tools that are relevant to their role.</p>
-          <p>The first week also includes learning modules about Allflex that are part of the global onboarding process.
-          </p>
-        </div>
-        <div class="right-container">
-          <div class="num">
-            <div class="blue-circle">
-              <h1>1</h1>
-            </div>
-            <h6><strong>Check daily on your employees’ well-being</strong> and their progress with their first week
-              agenda
-            </h6>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>2</h1>
-            </div>
-            <h6><strong>Follow up with the Buddy</strong> to see if your involvement is required</h6>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>3</h1>
-            </div>
-            <h6><div style="display: inline-block;" [ngClass]="{tada: anim}" (click)="pop()"><strong><u>Hold a role introduction
-                  meeting</u></strong></div>
-              to discuss their responsibilities and your expectations</h6>
-            <div *ngIf="popStart" class="pop-up-in" [ngClass]="{'pop-up-out': !popUp}">
-              <div class="exit" (click)="pop()">
-                <h3>x</h3>
-              </div>
-              <h4>Role Introduction Meeting - Key Points</h4>
-              <ul>
-                <li>Introduce their role within the team</li>
-                <ul>
-                  <li>The key areas of their responsibilities</li>
-                  <li>Targets and success criteria</li>
-                  <li>Interfaces</li>
-                  <li>Processes and systems</li>
-                  <li>Your expectations of the role</li>
-                </ul>
-                <li>Present them with their-specific training plan, including how you expect them to track and complete it</li>
-              </ul>
-            </div>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>4</h1>
-            </div>
-            <h6>If needed, support the employee in <strong>completing the self-learning units</strong></h6>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>5</h1>
-            </div>
-            <h6><strong>Schedule weekly 1:1 meetings</strong> for the entire onboarding period</h6>
-          </div>
-          <div class="num">
-            <div class="blue-circle">
-              <h1>6</h1>
-            </div>
-            <h6>Congratulate your new employee for successfully completing their first week at Allflex</h6>
-          </div>
-        </div>
-      </div>
+<!-- <div class="overall-page"> -->
+<!-- <div class="page-container"> -->
+<!-- <div class="page"> -->
+<h2 *ngIf="page == 1">Allflex Global Onboarding Resources Site</h2>
+<img class="line-img" src="./assets/images/blue-line.png" *ngIf="page == 1">
+<p *ngIf="page == 1" style="font-size: 20px;
+      padding: 0 40px;">
+  The Global Onboarding Resources Site provides new Allflex team members the knowledge needed to successfully
+  integrate with the business, as well as expose and share existing Animal Health colleagues to Allflex
+  portfolio, products, and solutions.
+  The site is categorized into two main sections:
+</p>
+<div *ngIf="page != 4" class="first-week-icons-cont">
+  <div class="first-week-icon-flex">
+    <h2>asdasdsa</h2>
+    <div class="first-week-icon-circle">
+      <img src="../../assets/images/settingg.png">
+    </div>
+  </div>
+  <div class="first-week-icon-flex">
+    <h2>asdasdsa</h2>
+    <div class="first-week-icon-circle">
+      <img src="../../assets/images/settingg.png">
     </div>
   </div>
 </div>
+<p class="first-week-p" *ngIf="page == 2">The Learning Pathways includes a series of self-guided learning courses divided into three main
+  business areas
+  representing the Allflex portfolio solutions: Monitoring, Milking Automation, and Identification. Each learning
+  pathway includes a focus area module with the capability for learners to self-track their course completion.
+</p>
+<p class="first-week-p" style="margin: 0 auto;" *ngIf="page == 2">Since many of the courses on this site are tracked by the Learning Management System, you can
+  receive completion
+  reports of the team members by reaching out to the Allflex Global Customer Experience Team</p>
+<p class="first-week-p" *ngIf="page == 3">
+  The Allflex Academy has global training resources for Allflex Livestock Intelligence Solutions including a variety of
+  tutorials, videos, and presentations. This resource is recommended for colleagues who are already familiar with
+  Allflex and are interested in learning more about our products and solutions
+</p>
+<div class="first-week-finish" *ngIf="page == 4">
+  <h2>If you have any questions, please reach out to</h2>
+  <a href="mailto:">globalcxteam@merck.com</a>
+  <h1>Good luck!</h1>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
