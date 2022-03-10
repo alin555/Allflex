@@ -1,16 +1,16 @@
 <app-menu *ngIf="page != 'start'" (page)="changePage($event)"></app-menu>
-  <div class="start-page" *ngIf="page == 'start'">
-    <div class="lets-go-container">
-      <h1>Manager-Buddy-Co-worker</h1>
-      <h3>Onboarding Guidelines for the Sales Manager</h3>
-      <div (click)="changePage('overview')" class="button">Let's go</div>
-    </div>
-    <img src="./assets/images/logo.png" class="logo">
+<div class="start-page" *ngIf="page == 'start'">
+  <div class="lets-go-container">
+    <!-- <h1>Manager-Buddy-Co-worker</h1> -->
+    <h3>Proffesional Onboarding Guidelines for the Sales Manager</h3>
+    <div (click)="changePage('overview')" class="button">Let's go</div>
   </div>
-  <app-overview *ngIf="page == 'overview'"></app-overview>
-  <app-before-start *ngIf="page == 'before-start'"></app-before-start>
-  <app-first-day *ngIf="page == 'first-day'"></app-first-day>
-  <app-first-week *ngIf="page == 'first-week'"></app-first-week>
-  <app-first-month *ngIf="page == 'first-month'"></app-first-month>
-  <app-first-three-months *ngIf="page == 'first-three-months'"></app-first-three-months>
-  <app-remote *ngIf="page == 'remote'"></app-remote>
+  <img src="./assets/images/logo.png" class="logo">
+</div>
+<app-overview *ngIf="page == 'overview'"></app-overview>
+<app-before-start *ngIf="page == 'before-start'"></app-before-start>
+<app-first-day *ngIf="page == 'first-day'"></app-first-day>
+<app-first-week *ngIf="page == 'first-week'"></app-first-week>
+<app-first-month *ngIf="page == 'first-month'"></app-first-month>
+<app-first-three-months *ngIf="page == 'first-three-months'"></app-first-three-months>
+<app-remote *ngIf="page == 'remote'"></app-remote>
