@@ -185,12 +185,12 @@ background-image: url(../../assets/images/home.png);
   margin: 50px auto 0;
   width: 90%;
   height: auto;
-  padding: 10px;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   position: relative;
   box-shadow: 1px 1px 6px 0px #0000005e;
   animation: scale 0.6s;

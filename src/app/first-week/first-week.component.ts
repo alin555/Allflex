@@ -10,10 +10,12 @@ export class FirstWeekComponent implements OnInit {
   popUp = false;
   popStart = false;
   anim = true;
+  text;
   @Input() page = 1;
   constructor() { }
 
   ngOnInit(): void {
+    if (this.page == 2) this.text = 'pathways';
     document.body.style.backgroundImage = "url('./assets/images/first-week.png')";
   }
 
@@ -25,6 +27,16 @@ export class FirstWeekComponent implements OnInit {
       setTimeout(() => {
         !this.popUp ? this.popStart = false : null;
       }, 250);
+    }
+  }
+
+  changeText(text) {
+    if (this.page == 2) {
+      if (this.text == text) {
+        this.text = null;
+      } else {
+        this.text = text;
+      }
     }
   }
 }

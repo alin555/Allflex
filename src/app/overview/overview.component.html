@@ -1,4 +1,5 @@
-<div class="overall-page" [ngClass]="{'bg_one': page == 1 || page == 2 || page == 3, 'bg_two': page == 4 || page == 5, 'bg_three': page == 6 || page == 7 || page == 8 || page == 9}">
+<div class="overall-page"
+  [ngClass]="{'bg_one': page == 1 || page == 2, 'bg_two': page == 3 || page == 4, 'bg_three': page == 5 || page == 6 || page == 7}">
   <div class="page-container flex">
     <div class="arrow" [ngStyle]="{'visibility': page != 1 ? 'visible' : 'hidden'}">
       <img src="./assets/images/prev.svg" class="prev" (click)="prevPage()">
@@ -19,18 +20,18 @@
         The kit is linked to a set of supporting tools.
       </p> -->
     </div>
-    <div class="page second-page" *ngIf="page == 2 || page == 3">
+    <div class="page second-page" *ngIf="page == 2">
       <div class="icons">
         <div class="wrap">
           <h2>Direct Manager</h2>
           <div class="icon-circle manager-icon" (click)="changeTo('manager')"
-            [ngStyle]="{'background': page == '2' ? '#46addd' : 'url(./assets/images/manager.png)'}">
+            [ngStyle]="{'background': text == 'manager' ? '#46addd' : 'url(./assets/images/manager.png)'}">
           </div>
         </div>
         <div class="wrap">
           <h2>Buddy</h2>
           <div class="icon-circle buddy-icon" (click)="changeTo('buddy')"
-            [ngStyle]="{'background': page == '3' ? '#46addd' : 'url(./assets/images/buddy.png)'}">
+            [ngStyle]="{'background': text == 'buddy' ? '#46addd' : 'url(./assets/images/buddy.png)'}">
           </div>
         </div>
         <!-- <div class="wrap">
@@ -40,7 +41,7 @@
           </div>
         </div> -->
       </div>
-      <div class="text-box" [ngStyle]="{'display': page == '2' ? 'block' : 'none'}">
+      <div class="text-box" [ngStyle]="{'display': text == 'manager' ? 'block' : 'none'}">
         <h6>The direct manager is responsible for a successful onboarding experience:</h6>
         <ul>
           <li>Assigning a Buddy (other team member or yourself)</li>
@@ -51,9 +52,10 @@
           <li>Aligning expectations</li>
         </ul>
       </div>
-      <div class="text-box" [ngStyle]="{'display': page == '3' ? 'block' : 'none'}">
+      <div class="text-box" [ngStyle]="{'display': text == 'buddy' ? 'block' : 'none'}">
         <h6>Assigning a buddy is not mandatory, but highly recommended. <br>
-          The buddy has the direct responsibility for the professional onboarding <br> Hold a meeting with the Buddy to ask
+          The buddy has the direct responsibility for the professional onboarding <br> Hold a meeting with the Buddy to
+          ask
           if they are willing to fill this role:
         </h6>
         <ul>
@@ -84,8 +86,8 @@
       </ul> -->
     </div>
     <!-- <div class="page third-page" *ngIf="page == 3"> -->
-      <!-- <app-first-day [page]="2"></app-first-day> -->
-      <!-- <h1>What do We Need to Do?</h1>
+    <!-- <app-first-day [page]="2"></app-first-day> -->
+    <!-- <h1>What do We Need to Do?</h1>
       <img class="line-img" src="./assets/images/blue-line.png">
       <div class="icons">
         <div class="wrap">
@@ -111,7 +113,7 @@
           sales people.</h6>
       </div> -->
     <!-- </div> -->
-    <div class="page fourth-page" *ngIf="page == 4">
+    <div class="page fourth-page" *ngIf="page == 3">
       <app-first-day [page]="1"></app-first-day>
       <!-- <h1>Onboarding Key Stakeholders</h1>
       <img class="line-img" src="./assets/images/blue-line.png">
@@ -167,7 +169,7 @@
         </ul>
       </div> -->
     </div>
-    <div class="page fifth-page" *ngIf="page == 5">
+    <div class="page fifth-page" *ngIf="page == 4">
       <app-first-day [page]="2"></app-first-day>
       <!-- <h1>Why do we need an Onboarding Buddy?</h1>
       <img class="line-img" src="./assets/images/blue-line.png">
@@ -211,7 +213,7 @@
         </div>
       </div> -->
     </div>
-    <div class="page sixth-page" *ngIf="page == 6">
+    <div class="page sixth-page" *ngIf="page == 5">
       <app-first-week [page]="1"></app-first-week>
       <!-- <h1>Points to keep in mind</h1>
       <img class="line-img" src="./assets/images/blue-line.png">
@@ -263,16 +265,13 @@
         </p>
       </div> -->
     </div>
-    <div class="page sixth-page" *ngIf="page == 7">
+    <div class="page sixth-page" *ngIf="page == 6">
       <app-first-week [page]="2"></app-first-week>
     </div>
-    <div class="page sixth-page" *ngIf="page == 8">
+    <div class="page sixth-page" *ngIf="page == 7">
       <app-first-week [page]="3"></app-first-week>
     </div>
-    <div class="page sixth-page" *ngIf="page == 9">
-      <app-first-week [page]="4"></app-first-week>
-    </div>
-    <div class="arrow" [ngStyle]="{'visibility': page != 9 ? 'visible' : 'hidden'}">
+    <div class="arrow" [ngStyle]="{'visibility': page != 7 ? 'visible' : 'hidden'}">
       <img src="./assets/images/next.svg" class="next" (click)="nextPage()">
     </div>
   </div>
@@ -280,13 +279,13 @@
     <div class="footer-icon" [ngClass]="{'active-icon': page == 1}" (click)="moveToPage(1)">
       <img src="./assets/images/person.png">
     </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 2 || page == 3}" (click)="moveToPage(2)">
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 2}" (click)="moveToPage(2)">
       <img src="./assets/images/settingg.png">
     </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 4 || page == 5}" (click)="moveToPage(4)">
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 3 || page == 4}" (click)="moveToPage(3)">
       <img src="./assets/images/rocket.png">
     </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 6 || page == 7 || page == 8}" (click)="moveToPage(6)">
+    <div class="footer-icon" [ngClass]="{'active-icon': page == 5 || page == 6 || page == 7}" (click)="moveToPage(5)">
       <img src="./assets/images/lamp.png">
     </div>
   </footer>

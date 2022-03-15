@@ -10,34 +10,44 @@
   portfolio, products, and solutions.
   The site is categorized into two main sections:
 </p>
-<div *ngIf="page != 4" class="first-week-icons-cont">
-  <div class="first-week-icon-flex">
-    <h2>asdasdsa</h2>
-    <div class="first-week-icon-circle">
-      <img src="../../assets/images/settingg.png">
+<div *ngIf="page != 3">
+  <div class="first-week-icons-cont">
+    <div class="first-week-icon-flex" (click)="changeText('pathways')">
+      <h2>Onboarding Learning Pathways</h2>
+      <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'pathways', 'clickable': page == 2}">
+        <img src="../../assets/images/Artboard28.png">
+      </div>
+    </div>
+    <div class="first-week-icon-flex" (click)="changeText('academy')">
+      <h2>The Allflex Academy</h2>
+      <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'academy', 'clickable': page == 2}">
+        <img src="../../assets/images/Artboard26.png">
+      </div>
     </div>
   </div>
-  <div class="first-week-icon-flex">
-    <h2>asdasdsa</h2>
-    <div class="first-week-icon-circle">
-      <img src="../../assets/images/settingg.png">
-    </div>
+  <div class="text-box" *ngIf="text == 'pathways'">
+    <p class="first-week-p">The Learning Pathways includes a series of self-guided learning courses divided into three
+      main
+      business areas
+      representing the Allflex portfolio solutions: Monitoring, Milking Automation, and Identification. Each learning
+      pathway includes a focus area module with the capability for learners to self-track their course completion.
+    </p>
+    <p class="first-week-p" style="margin: 0 auto;">Since many of the courses on this site are tracked by the Learning
+      Management System, you can
+      receive completion
+      reports of the team members by reaching out to the Allflex Global Customer Experience Team</p>
+  </div>
+  <div class="text-box" *ngIf="text == 'academy'">
+    <p class="first-week-p">
+      The Allflex Academy has global training resources for Allflex Livestock Intelligence Solutions including a variety
+      of
+      tutorials, videos, and presentations. This resource is recommended for colleagues who are already familiar with
+      Allflex and are interested in learning more about our products and solutions
+    </p>
   </div>
 </div>
-<p class="first-week-p" *ngIf="page == 2">The Learning Pathways includes a series of self-guided learning courses divided into three main
-  business areas
-  representing the Allflex portfolio solutions: Monitoring, Milking Automation, and Identification. Each learning
-  pathway includes a focus area module with the capability for learners to self-track their course completion.
-</p>
-<p class="first-week-p" style="margin: 0 auto;" *ngIf="page == 2">Since many of the courses on this site are tracked by the Learning Management System, you can
-  receive completion
-  reports of the team members by reaching out to the Allflex Global Customer Experience Team</p>
-<p class="first-week-p" *ngIf="page == 3">
-  The Allflex Academy has global training resources for Allflex Livestock Intelligence Solutions including a variety of
-  tutorials, videos, and presentations. This resource is recommended for colleagues who are already familiar with
-  Allflex and are interested in learning more about our products and solutions
-</p>
-<div class="first-week-finish" *ngIf="page == 4">
+
+<div class="first-week-finish" *ngIf="page == 3">
   <h2>If you have any questions, please reach out to</h2>
   <a href="mailto:">globalcxteam@merck.com</a>
   <h1>Good luck!</h1>
