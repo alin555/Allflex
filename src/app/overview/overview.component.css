@@ -91,7 +91,7 @@
 }
 
 .home {
-background-image: url(../../assets/images/home.png);
+  background-image: url(../../assets/images/home.png);
 }
 
 .home p {
@@ -152,17 +152,20 @@ background-image: url(../../assets/images/home.png);
   transition: all 0.5s;
 }
 
-.icon-circle:hover {
-  box-shadow: 0px 0px 24px 4px #1a9bd7;
+.icon-circle:not(.active-circle):hover {
+  box-shadow: 0 0 16px 0 #47aedd;
 }
 
 .info {
   display: flex;
 }
 
+.active-circle {
+  background: #47addd6e;
+}
+
 .manager-icon {
   background-image: url(../../assets/images/manager.png);
-
 }
 
 .buddy-icon {
@@ -177,8 +180,12 @@ background-image: url(../../assets/images/home.png);
   margin: 5px 0;
 }
 
+.buddy-newline {
+  font-size: 22px;
+}
+
 .text-box {
-  margin: 50px auto 0;
+  margin: 20px auto 0;
   width: 90%;
   height: auto;
   padding: 20px;
@@ -196,7 +203,7 @@ background-image: url(../../assets/images/home.png);
   color: #2f5597;
   font-size: 26px;
   text-align: left;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .text-box li {
@@ -297,15 +304,35 @@ background-image: url(../../assets/images/home.png);
   font-size: 22px;
 }
 
+.logo {
+  position: fixed;
+  height: 8%;
+  left: 4px;
+  top: 4px;
+}
+
 .point {
   margin-bottom: 14px;
   position: relative;
 }
 
-footer {
+.footer-cont {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(0deg, white 50%, transparent 200%);
+}
+
+footer {
+  /* position: fixed;
   bottom: 8px;
-  left: calc(((100% - 180px) / 2) + 105px);
+  left: 50%;
+  transform: translate(-50%, 0); */
   background-color: #c0e3f3;
   display: flex;
   align-items: center;
@@ -379,9 +406,18 @@ footer {
     height: 70px;
   }
 
-  .text-box h6 {
+  /* .text-box h6, .buddy-newline {
     font-size: 24px;
     padding: 2px;
+  } */
+
+  .text-box h6, .buddy-newline {
+    font-size: 18px;
+    padding: 2px;
+  }
+
+  .text-box li {
+    font-size: 18px;
   }
 }
 
@@ -399,14 +435,14 @@ footer {
     height: 60px;
   }
 
-  .text-box h6 {
+  .text-box h6, .buddy-newline {
     font-size: 18px;
     padding: 2px;
   }
 
   .text-box li {
     font-size: 14px;
-  }  
+  }
 }
 
 @media (max-height: 850px) {

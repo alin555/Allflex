@@ -3,25 +3,36 @@
 <!-- <div class="page"> -->
 <h2 *ngIf="page == 1">Allflex Global Onboarding Resources Site</h2>
 <img class="line-img" src="./assets/images/blue-line.png" *ngIf="page == 1">
-<p *ngIf="page == 1" style="font-size: 20px;
-      padding: 0 40px;">
-  The Global Onboarding Resources Site provides new Allflex team members the knowledge needed to successfully
-  integrate with the business, as well as expose and share existing Animal Health colleagues to Allflex
-  portfolio, products, and solutions.
-  The site is categorized into two main sections:
-</p>
-<div *ngIf="page != 3">
+<div *ngIf="page == 1">
+  <p style="font-size: 20px;
+        padding: 0 40px;">
+    <!-- The Global Onboarding Resources Site provides new Allflex team members the knowledge needed to successfully
+    integrate with the business, as well as expose and share existing Animal Health colleagues to Allflex
+    portfolio, products, and solutions.
+    The site is categorized into two main sections: -->
+    The Global Onboarding Resources Site provides new Allflex team members the knowledge needed to successfully
+    integrate
+    with the business, as well as expose and share existing Animal Health colleagues to Allflex portfolio, products, and
+    solutions.
+    The site is categorized into two main sections:
+  </p>
+  <div style="padding-left: 40px; margin-top: 20px;">
+    <span style="display: block; font-size: 20px;">1. Onboarding Learning Pathways</span>
+    <span style="display: block; font-size: 20px;">2. The Allflex Academy</span>
+  </div>
+</div>
+<div *ngIf="page == 2">
   <div class="first-week-icons-cont">
     <div class="first-week-icon-flex" (click)="changeText('pathways')">
       <h2>Onboarding Learning Pathways</h2>
       <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'pathways', 'clickable': page == 2}">
-        <img src="../../assets/images/Artboard28.png">
+        <img src="./assets/images/Artboard28.png">
       </div>
     </div>
     <div class="first-week-icon-flex" (click)="changeText('academy')">
       <h2>The Allflex Academy</h2>
       <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'academy', 'clickable': page == 2}">
-        <img src="../../assets/images/Artboard26.png">
+        <img src="./assets/images/Artboard26.png">
       </div>
     </div>
   </div>
@@ -51,6 +62,7 @@
   <h2>If you have any questions, please reach out to</h2>
   <a href="mailto:">globalcxteam@merck.com</a>
   <h1>Good luck!</h1>
+  <!-- <img src="./assets/images/logo.png" class="logo"> -->
 </div>
 <!-- </div> -->
 <!-- </div> -->

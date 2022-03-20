@@ -17,7 +17,7 @@ body {
 }
 
 .page {
-  overflow-y: scroll;
+  /* overflow-y: auto; */
   width: 85%;
   height: calc(100% - 60px);
   animation: fadeIn 0.8s forwards;
@@ -52,12 +52,12 @@ ul {
 }
 
 .page-container {
-  height: 62%;
+  /* height: 62%; */
+  height: calc(62% - 25px);
   width: 100%;
-  /* width: calc(100% - 180px); */
-  /* padding: 0 0 0 180px; */
+  overflow: auto;
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
 }
 
 .content {

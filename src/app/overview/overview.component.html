@@ -1,5 +1,7 @@
 <div class="overall-page"
   [ngClass]="{'bg_one': page == 1 || page == 2, 'bg_two': page == 3 || page == 4, 'bg_three': page == 5 || page == 6 || page == 7}">
+  <img src="./assets/images/favicon.png" class="logo">
+
   <div class="page-container flex">
     <div class="arrow" [ngStyle]="{'visibility': page != 1 ? 'visible' : 'hidden'}">
       <img src="./assets/images/prev.svg" class="prev" (click)="prevPage()">
@@ -24,14 +26,14 @@
       <div class="icons">
         <div class="wrap">
           <h2>Direct Manager</h2>
-          <div class="icon-circle manager-icon" (click)="changeTo('manager')"
-            [ngStyle]="{'background': text == 'manager' ? '#46addd' : 'url(./assets/images/manager.png)'}">
+          <div class="icon-circle manager-icon" [ngClass]="{'active-circle': text == 'manager'}"
+            (click)="changeTo('manager')">
           </div>
         </div>
         <div class="wrap">
           <h2>Buddy</h2>
-          <div class="icon-circle buddy-icon" (click)="changeTo('buddy')"
-            [ngStyle]="{'background': text == 'buddy' ? '#46addd' : 'url(./assets/images/buddy.png)'}">
+          <div class="icon-circle buddy-icon" [ngClass]="{'active-circle': text == 'buddy'}"
+            (click)="changeTo('buddy')">
           </div>
         </div>
         <!-- <div class="wrap">
@@ -54,10 +56,9 @@
       </div>
       <div class="text-box" [ngStyle]="{'display': text == 'buddy' ? 'block' : 'none'}">
         <h6>Assigning a buddy is not mandatory, but highly recommended. <br>
-          The buddy has the direct responsibility for the professional onboarding <br> Hold a meeting with the Buddy to
-          ask
-          if they are willing to fill this role:
+          The buddy has the direct responsibility for the professional onboarding.
         </h6>
+        <span class="buddy-newline">Hold a meeting with the Buddy to ask if they are willing to fill this role:</span>
         <ul>
           <!-- <li>Hold a meeting with the Buddy to ask if they are willing to fill this role:</li> -->
           <!-- <li>Showing them around</li> -->
@@ -275,18 +276,20 @@
       <img src="./assets/images/next.svg" class="next" (click)="nextPage()">
     </div>
   </div>
-  <footer>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 1}" (click)="moveToPage(1)">
-      <img src="./assets/images/person.png">
-    </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 2}" (click)="moveToPage(2)">
-      <img src="./assets/images/settingg.png">
-    </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 3 || page == 4}" (click)="moveToPage(3)">
-      <img src="./assets/images/rocket.png">
-    </div>
-    <div class="footer-icon" [ngClass]="{'active-icon': page == 5 || page == 6 || page == 7}" (click)="moveToPage(5)">
-      <img src="./assets/images/lamp.png">
-    </div>
-  </footer>
+  <div class="footer-cont">
+    <footer>
+      <div class="footer-icon" [ngClass]="{'active-icon': page == 1}" (click)="moveToPage(1)">
+        <img src="./assets/images/person.png">
+      </div>
+      <div class="footer-icon" [ngClass]="{'active-icon': page == 2}" (click)="moveToPage(2)">
+        <img src="./assets/images/settingg.png">
+      </div>
+      <div class="footer-icon" [ngClass]="{'active-icon': page == 3 || page == 4}" (click)="moveToPage(3)">
+        <img src="./assets/images/rocket.png">
+      </div>
+      <div class="footer-icon" [ngClass]="{'active-icon': page == 5 || page == 6 || page == 7}" (click)="moveToPage(5)">
+        <img src="./assets/images/lamp.png">
+      </div>
+    </footer>
+  </div>
 </div>
