@@ -4,8 +4,8 @@
 <h2 *ngIf="page == 1">Allflex Global Onboarding Resources Site</h2>
 <img class="line-img" src="./assets/images/blue-line.png" *ngIf="page == 1">
 <div *ngIf="page == 1">
-  <p style="font-size: 20px;
-        padding: 0 40px;">
+  <p style="font-size: 24px;
+        padding: 0 40px 0px 0px;">
     <!-- The Global Onboarding Resources Site provides new Allflex team members the knowledge needed to successfully
     integrate with the business, as well as expose and share existing Animal Health colleagues to Allflex
     portfolio, products, and solutions.
@@ -16,9 +16,15 @@
     solutions.
     The site is categorized into two main sections:
   </p>
-  <div style="padding-left: 40px; margin-top: 20px;">
-    <span style="display: block; font-size: 20px;">1. Onboarding Learning Pathways</span>
-    <span style="display: block; font-size: 20px;">2. The Allflex Academy</span>
+  <div style="padding-left: 40px; margin-top: 24px;margin-bottom:60px">
+    <a target="_blank" href="https://collaboration.merck.com/sites/MAHI"><span style="display: block; font-size: 24px;">1. Onboarding Learning Pathways</span></a>
+   <a target="_blank"href="https://www.scrdairy.com/Log-in.html"> <span style="display: block; font-size: 24px;">2. The Allflex Academy</span></a>
+    <img src="./assets/images/photoscreen.jpg" class="imgb" style="height: 310px;
+    box-shadow: 1px 1px 11px #00000036;
+    padding-bottom: 70px;
+
+    width: auto;
+    float: right;">
   </div>
 </div>
 <div *ngIf="page == 2">
@@ -26,13 +32,13 @@
     <div class="first-week-icon-flex" (click)="changeText('pathways')">
       <h2>Onboarding Learning Pathways</h2>
       <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'pathways', 'clickable': page == 2}">
-        <img src="./assets/images/Artboard28.png">
+        <img src="./assets/images/Artboard26.png">
       </div>
     </div>
     <div class="first-week-icon-flex" (click)="changeText('academy')">
       <h2>The Allflex Academy</h2>
-      <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'academy', 'clickable': page == 2}">
-        <img src="./assets/images/Artboard26.png">
+      <div class="first-week-icon-circle" [ngClass]="{'active-circle': text == 'academy','next': text == 'pathways', 'clickable': page == 2}">
+        <img src="./assets/images/Artboard28.png">
       </div>
     </div>
   </div>
@@ -40,27 +46,27 @@
     <p class="first-week-p">The Learning Pathways includes a series of self-guided learning courses divided into three
       main
       business areas
-      representing the Allflex portfolio solutions: Monitoring, Milking Automation, and Identification. Each learning
+      representing the Allflex Livestock Intelligence solutions: Monitoring, Milking Automation, and Identification. Each learning
       pathway includes a focus area module with the capability for learners to self-track their course completion.
     </p>
     <p class="first-week-p" style="margin: 0 auto;">Since many of the courses on this site are tracked by the Learning
       Management System, you can
       receive completion
-      reports of the team members by reaching out to the Allflex Global Customer Experience Team</p>
+      reports of the team members by reaching out to the Allflex Global Customer Experience Team.</p>
   </div>
   <div class="text-box" *ngIf="text == 'academy'">
     <p class="first-week-p">
-      The Allflex Academy has global training resources for Allflex Livestock Intelligence Solutions including a variety
-      of
-      tutorials, videos, and presentations. This resource is recommended for colleagues who are already familiar with
-      Allflex and are interested in learning more about our products and solutions
+      The Allflex Academy has global training resources for Allflex Portfolio, including a variety of tutorials, videos, and presentations.
+      <br/> This resource is recommended for colleagues who are already familiar with Allflex and are interested in learning more about our products and solutions.
     </p>
   </div>
 </div>
 
 <div class="first-week-finish" *ngIf="page == 3">
-  <h2>If you have any questions, please reach out to</h2>
-  <a href="mailto:">globalcxteam@merck.com</a>
+  <h2>For any questions, please reach out to</h2>
+  <a href="mailto:globalcxteam@merck.com">globalcxteam@merck.com</a>
+
+
   <h1>Good luck!</h1>
   <!-- <img src="./assets/images/logo.png" class="logo"> -->
 </div>
